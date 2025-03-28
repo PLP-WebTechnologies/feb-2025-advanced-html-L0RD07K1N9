@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Assignment</title>
+</head>
+<body>
+    <h2>Steps to Success</h2>
+    <ol type="I">
+        <li>Plan</li>
+        <li>Execute</li>
+        <li>Review</li>
+    </ol>
+
+    <h2>Featured Image</h2>
+    <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature Scene" width="300">
+
+    <h2>Contact List</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Colin Johnson</td>
+            <td>1083 Ingwe Estate, Three Rivers</td>
+            <td>069 210 6485</td>
+            <td>colin.johnson@gmai.com</td>
+        </tr>
+        <tr>
+            <td>Petrus Van Wirk</td>
+            <td>456 Oak Ave, Pretoria</td>
+            <td>066 123 9876</td>
+            <td>wirkpetrus432@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Thando Myeni</td>
+            <td>789 Pine Rd, Johannesburg</td>
+            <td>068 465 7688</td>
+            <td>myenithando33@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Teboho Mofokeng</td>
+            <td>321 Elm St, Johannesburg</td>
+            <td>064 456 2431</td>
+            <td>tebohomofokeng@orlandopirates.co.za</td>
+        </tr>
+        <tr>
+            <td>Lebo Segobela</td>
+            <td>654 Birch Ave, Sandton</td>
+            <td>063 345 9870</td>
+            <td>lebo.segobela@udmultimedia.co.za</td>
+        </tr>
+    </table>
+
+        <!-- Registration Form Section -->
+        <h2>Register Here</h2>
+        <form>
+            <!-- Name Field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+    
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="8" required><br>
+    
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+    
+            <!-- Dropdown (e.g., Country) -->
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">South Africa</option>
+                <option value="uk">Mozambique</option>
+                <option value="ca">Kenya</option>
+            </select><br>
+    
+            <!-- Radio Buttons (e.g., Gender) -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+    
+            <!-- Checkboxes (e.g., Interests) -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="tech" name="interest" value="tech">
+            <label for="tech">Technology</label>
+            <input type="checkbox" id="sports" name="interest" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label><br><br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+</body>
+</html>
