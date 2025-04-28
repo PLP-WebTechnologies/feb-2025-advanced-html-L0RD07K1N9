@@ -2,107 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio and project showcase">
+    <meta name="theme-color" content="#007bff">
+    <title>HTML 5 Project </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Steps to Success</h2>
-    <ol type="I">
-        <li>Plan</li>
-        <li>Execute</li>
-        <li>Review</li>
-    </ol>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome To My Basic HTML 5</h1>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Project Features</h2>
+            <ol type="I">
+                <li>Responsive Design</li>
+                <li>Form Validation</li>
+                <li>Multimedia Elements</li>
+                <li>Contact Table</li>
+                <li>External Image</li>
+            </ol>
+        </section>
 
-    <h2>Featured Image</h2>
-    <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature Scene" width="300">
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Featured Image</h2>
+            <img src="CapeTown.jpg" alt="Beautiful landscape" width="600">
+        </section>
 
-    <h2>Contact List</h2>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Mobile</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <td>Colin Johnson</td>
-            <td>1083 Ingwe Estate, Three Rivers</td>
-            <td>069 210 6485</td>
-            <td>colin.johnson@gmai.com</td>
-        </tr>
-        <tr>
-            <td>Petrus Van Wirk</td>
-            <td>456 Oak Ave, Pretoria</td>
-            <td>066 123 9876</td>
-            <td>wirkpetrus432@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Thando Myeni</td>
-            <td>789 Pine Rd, Johannesburg</td>
-            <td>068 465 7688</td>
-            <td>myenithando33@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Teboho Mofokeng</td>
-            <td>321 Elm St, Johannesburg</td>
-            <td>064 456 2431</td>
-            <td>tebohomofokeng@orlandopirates.co.za</td>
-        </tr>
-        <tr>
-            <td>Lebo Segobela</td>
-            <td>654 Birch Ave, Sandton</td>
-            <td>063 345 9870</td>
-            <td>lebo.segobela@udmultimedia.co.za</td>
-        </tr>
-    </table>
+        <!-- Contact Table -->
+        <section>
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Patrice Motsepe</td>
+                        <td>Sandton City</td>
+                        <td>+27-76-123-4567</td>
+                        <td>pmotsepe@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Cyril Ramaphosa</td>
+                        <td>Pretoria, City</td>
+                        <td>+27-81-987-6543</td>
+                        <td>cramaphosa@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Julius Malema</td>
+                        <td>Limpopo Village</td>
+                        <td>+27-72-456-7890</td>
+                        <td>j.malema@eff.gov.za</td>
+                    </tr>
+                    <tr>
+                        <td>Thabo Mbeki</td>
+                        <td>101 Retired City</td>
+                        <td>+27-75-321-6547</td>
+                        <td>tmbeki@veteran.gov.za</td>
+                    </tr>
+                    <tr>
+                        <td>Winnie Mandela</td>
+                        <td>202 Undisclosed Town</td>
+                        <td>+27-82-654-3210</td>
+                        <td>winnie.mandela@sars.gov.za</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <!-- Registration Form Section -->
-        <h2>Register Here</h2>
-        <form>
-            <!-- Name Field -->
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
-    
-            <!-- Email Field -->
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-    
-            <!-- Password Field -->
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="8" required><br>
-    
-            <!-- Date Field -->
-            <label for="dob">Date of Birth:</label><br>
-            <input type="date" id="dob" name="dob" required><br>
-    
-            <!-- Dropdown (e.g., Country) -->
-            <label for="country">Country:</label><br>
-            <select id="country" name="country" required>
-                <option value="" disabled selected>Select your country</option>
-                <option value="us">South Africa</option>
-                <option value="uk">Mozambique</option>
-                <option value="ca">Kenya</option>
-            </select><br>
-    
-            <!-- Radio Buttons (e.g., Gender) -->
-            <label>Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br>
-    
-            <!-- Checkboxes (e.g., Interests) -->
-            <label>Interests:</label><br>
-            <input type="checkbox" id="tech" name="interest" value="tech">
-            <label for="tech">Technology</label>
-            <input type="checkbox" id="sports" name="interest" value="sports">
-            <label for="sports">Sports</label>
-            <input type="checkbox" id="music" name="interest" value="music">
-            <label for="music">Music</label><br><br>
-    
-            <!-- Submit Button -->
-            <input type="submit" value="Register">
-        </form>
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+            <form id="registrationForm" novalidate>
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Dropdown: Country -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="gauteng">Gauteng</option>
+                    <option value="limpopo">Limpopo</option>
+                    <option value="kwazulu-natal">kwazulu-natal</option>
+                    <option value="cape town">Cape Town</option>
+                </select>
+
+                <!-- Radio Buttons: Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+
+                <!-- Checkboxes: Interests -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                    <label><input type="checkbox" name="interests" value="music"> Music</label>
+                    <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Multimedia Elements -->
+        <section>
+            <h2>Multimedia</h2>
+            <!-- Audio -->
+            <audio controls>
+                <source src="Kabza_De_Small_–_Imithandazo_feat_Young_Stunna_DJ_Maphorisa_Sizwe.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Video -->
+            <video controls width="600">
+                <source src="My Apartment.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HTML5 Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
